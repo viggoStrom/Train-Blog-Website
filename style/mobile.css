@@ -67,6 +67,10 @@ figcaption {
     padding-bottom: 3rem;
 }
 
+.forDesktopUse {
+    display: none;
+}
+
 /* index page */
 
 #welcomPage {
@@ -100,7 +104,7 @@ figcaption {
 
 /* blog page */
 
-#blogPostList {
+#blogPostListSection {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -112,7 +116,7 @@ figcaption {
     padding-top: 1rem;
     display: flex;
     flex-flow: row wrap;
-    gap: 1rem;
+    gap: .5rem;
 }
 
 button {
@@ -141,6 +145,10 @@ button:active {
     transition-delay: .40s;
 }
 
+.blogPostList:hover {
+    transform: scale(1.005);
+}
+
 .blogPostList {
     padding: 0;
     margin: 1rem 0rem 3rem 0rem;
@@ -148,6 +156,12 @@ button:active {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
+
+    background-color: rgb(240, 240, 240);
+    border-radius: 2rem;
+
+    transform: scale(1);
+    transition: transform .2s ease-in-out;
 }
 
 .blogPostImages {
@@ -155,14 +169,17 @@ button:active {
     aspect-ratio: 1/1;
     object-fit: cover;
     padding: 1rem;
-    scale: 1.05;
+    margin-top: 1rem;
+    scale: 1.1;
+    border-radius: 1rem;
 }
+
 
 #blogPostListUl {
     padding-left: 0;
     list-style-type: none;
-    width: 95%;
-    background-color: rgb(240, 240, 240);
+    width: 90%;
+    /* background-color: rgb(240, 240, 240); */
     border-radius: 1rem;
 }
 

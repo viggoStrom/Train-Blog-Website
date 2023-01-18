@@ -6,7 +6,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: greenyellow;
 }
 
 header {
@@ -72,15 +71,16 @@ figcaption {
 
 .welcomeText {
     margin-top: 5rem;
-    padding: 3rem 1rem 50vh 1rem;
+    padding: 3rem 1rem 60vh 1rem;
     max-width: 30%;
 }
 
 .welcomePicture {
     z-index: -1;
     margin: 0;
-    padding: o;
-    width: 32rem;
+    padding: 0;
+    /* max-width: 10%; */
+    aspect-ratio: 370/658;
 }
 
 #mobileWelcomePicture {

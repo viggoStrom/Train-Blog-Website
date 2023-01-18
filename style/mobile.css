@@ -157,8 +157,8 @@ button:active {
     flex-flow: row wrap;
     justify-content: space-evenly;
 
-    background-color: rgb(240, 240, 240);
     border-radius: 2rem;
+    box-shadow: 0 0 1rem grey;
 
     transform: scale(1);
     transition: transform .2s ease-in-out;
@@ -179,8 +179,13 @@ button:active {
     padding-left: 0;
     list-style-type: none;
     width: 90%;
-    /* background-color: rgb(240, 240, 240); */
     border-radius: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+#blogPostListUl li {
+    width: 80%;
 }
 
 .blogPostTextSection {
@@ -216,7 +221,7 @@ button:active {
 }
 
 .dedicatedPostTextWrapper {
-    text-align: center;
+    text-align: left;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;

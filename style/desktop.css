@@ -35,7 +35,7 @@ header {
 }
 
 footer {
-    padding: 1rem 0 80vh 0;
+    padding: 2rem 0 80vh 0;
     margin: 0;
     width: 100%;
     background-color: rgb(53, 53, 53);
@@ -71,7 +71,7 @@ figcaption {
 
 .welcomeText {
     margin-top: 5rem;
-    padding: 3rem 1rem 60vh 1rem;
+    /* padding: 3rem 1rem 60vh 1rem; */
     max-width: 30%;
 }
 
@@ -79,8 +79,7 @@ figcaption {
     z-index: -1;
     margin: 0;
     padding: 0;
-    /* max-width: 10%; */
-    aspect-ratio: 370/658;
+    height: 85vh;
 }
 
 #mobileWelcomePicture {

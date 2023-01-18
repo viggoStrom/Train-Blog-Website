@@ -168,6 +168,13 @@ button:active {
     list-style-type: none;
     width: 90%;
     border-radius: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+
+#blogPostListUl li {
+    width: 80%;
 }
 
 .blogPostTextSection {

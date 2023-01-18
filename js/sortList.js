@@ -1,8 +1,18 @@
+let isMenuActive = false
+
 const showSort = () => {
   buttons = document.querySelectorAll(".sortOption");
-  buttons.forEach(element => {
-    element.style.opacity = 1;
-  });
+  if (!isMenuActive) {
+    isMenuActive = true
+    buttons.forEach(element => {
+      element.style.display = "flex";
+    });
+  } else {
+    buttons.forEach(element => {
+      element.style.display = "none";
+    });
+    isMenuActive = false
+  }
 }
 
 // integrerat javaScript från https://www.w3schools.com/howto/howto_js_sort_list.asp
